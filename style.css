@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main {
+    background-image: url(bg.jpg);
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    width: 80px;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    gap: 26px;
+    padding: 0 20px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.seperation{
+    height: 7px;
+    background-color: rgb(35,35,35);
+}
+
+.btn-red1{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 0px;
+    font-weight: lighter;
+}
+
+.main input{
+    padding: 10px 33px;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgb(23,23,0.3);
+    border-style: solid;
+    border-color: white;
+    color:white;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0px;
+    font-weight: lighter;
+}
+
+.btn{
+    padding: 3px 8px;
+    color: white;
+    background-color: rgba(248,243,243,0.021);
+    border-radius:4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+}
+
+
+.secimg{
+    position: relative;
+}
+
+.secimg img{
+    width:30vw;
+    position: relative;
+    z-index: 10;
+    width:500px;
+}
+
+.secimg video{
+    position: absolute;
+    top:90px;
+    right: 0px;
+    width:450px;
+    height:260px;
+}
+.secimg1{
+    position: relative;
+}
+
+.secimg1 img{
+    width:30vw;
+    position: relative;
+    z-index: 10;
+    width:500px;
+}
+
+.secimg1 video{
+    position: absolute;
+    top:90px;
+    right: 0px;
+    width:450px;
+    height:260px;
+}
+
+
+.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0;
+}
+
+.first > div :nth-child(1){
+    font-size: 44px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+
+.first > div :nth-child(2){
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom:30px
+}
+
+.third video{
+    position: absolute;
+    top:40px;
+    right:100px;
+    height:190px;
+    width:300px;
+}
+
+.faq{
+    color: white;
+    text-align: center;
+    padding: 34px;
+    font-size: 30px;
+}
+
+.faqbox svg{
+    height:25px;
+    width:25px;
+}
+
+.faqbox:hover{
+    background-color: rgb(65,65,65);
+}
+
+.faqbox{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(45,45,45);
+    padding: 24px;
+    margin: 12px auto;
+    max-width: 80vw;
+    cursor: pointer;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-bottom: 23px;
+}
+
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (max-width:1212px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }
+    
+}
+
+
+@media screen and (max-width:1212px) {
+    .first{
+        flex-wrap: wrap;
+    }
+    
+    .secimg img{
+        width: 290px;
+    }
+
+    .secimg video{
+        position: absolute;
+        top: -12px;
+        right: 49px;
+        width:205px;
+        height:260px;
+    }
+
+    .hero> :first-child {
+        font-size: 34px;
+    }
+    
+    .hero> :nth-child(2) {
+        font-size: 20px;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 20px;
+    }
+    
+    .btn-red1{
+        padding:14px 15px;
+        position: relative;
+        right: -111px;
+        bottom: -38px
+    }
+
+    .hero input{
+        position: relative;
+        right:-55px;
+    }
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-red:hover{
+    cursor: pointer;
+}
+
+.btn-red1:hover{
+    cursor: pointer;
+}
